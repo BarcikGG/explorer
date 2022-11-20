@@ -1,0 +1,15 @@
+C:\Users\danil\Desktop\c# projects\Folders\Folders\bin\Debug\net6.0\Folders.exe
+C:\Users\danil\Desktop\c# projects\Folders\Folders\bin\Debug\net6.0\Folders.deps.json
+C:\Users\danil\Desktop\c# projects\Folders\Folders\bin\Debug\net6.0\Folders.runtimeconfig.json
+C:\Users\danil\Desktop\c# projects\Folders\Folders\bin\Debug\net6.0\Folders.dll
+C:\Users\danil\Desktop\c# projects\Folders\Folders\bin\Debug\net6.0\Folders.pdb
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.csproj.AssemblyReference.cache
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.AssemblyInfoInputs.cache
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.AssemblyInfo.cs
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.csproj.CoreCompileInputs.cache
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.dll
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\refint\Folders.dll
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.pdb
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\Folders.genruntimeconfig.cache
+C:\Users\danil\Desktop\c# projects\Folders\Folders\obj\Debug\net6.0\ref\Folders.dll
