@@ -8,7 +8,6 @@ internal class Program
     private static void Main(string[] args)
     {
         string path = "";
-        string folder_name = "";
         List<string> dirs = new();
         class_arrow my_arrow = new class_arrow();
 
@@ -68,7 +67,7 @@ internal class Program
                     Console.Clear();
                     HeaderUp();
                     Scan.ScanDirectory(path, dirs, my_arrow);
-                    Draw();
+                    dop_actions.Draw();
                     my_arrow.arrov_max = dirs.Count + 2;
                     Console.SetCursorPosition(0, 0);
                     Console.WriteLine(path);
@@ -88,50 +87,36 @@ internal class Program
                     Console.Clear();
                     HeaderUp();
                     Scan.ScanDirectory(path, dirs, my_arrow);
-                    Draw();
+                    dop_actions.Draw();
                     my_arrow.arrov_max = dirs.Count + 2;
                     Console.SetCursorPosition(0, 0);
                     Console.WriteLine(path);
                     break;
                 case ConsoleKey.F1:
-                    Console.SetCursorPosition(91, 8);
-                    Console.WriteLine("Введите название папки:");
-                    Console.SetCursorPosition(91, 9);
-                    folder_name = Console.ReadLine();
-                    Directory.CreateDirectory(path+folder_name);
+                    dop_actions.F1(path);
+                    Directory.CreateDirectory(path+dop_actions.folder_name);
                     Console.Clear();
                     HeaderUp();
                     Scan.ScanDirectory(path, dirs, my_arrow);
-                    Draw();
+                    dop_actions.Draw();
                     Console.SetCursorPosition(0, 0);
                     Console.WriteLine(path);
                     break;
                 case ConsoleKey.F2:
-                    Console.SetCursorPosition(91, 8);
-                    Console.WriteLine("Введите название файла:");
-                    Console.SetCursorPosition(91, 9);
-                    folder_name = Console.ReadLine();
-                    File.WriteAllText(path+"\\"+folder_name, "");
+                    dop_actions.F2(path);
                     Console.Clear();
                     HeaderUp();
                     Scan.ScanDirectory(path, dirs, my_arrow);
-                    Draw();
+                    dop_actions.Draw();
                     Console.SetCursorPosition(0, 0);
                     Console.WriteLine(path);
                     break;
                 case ConsoleKey.F3:
-                    if (dirs[my_arrow.y - my_arrow.min].Contains("."))
-                    {
-                        File.Delete(dirs[my_arrow.y - my_arrow.min]);
-                    }
-                    else
-                    {
-                        Directory.Delete(dirs[my_arrow.y - my_arrow.min]);
-                    }
+                    dop_actions.F3(dirs, my_arrow);
                     Console.Clear();
                     HeaderUp();
                     Scan.ScanDirectory(path, dirs, my_arrow);
-                    Draw();
+                    dop_actions.Draw();
                     Console.SetCursorPosition(0, 0);
                     Console.WriteLine(path);
                     break;
@@ -146,24 +131,6 @@ internal class Program
                 "------------------------------------------------");
             Console.WriteLine("\tНазвание\t\t\t\tДата создания\t\tТип");   
         }
-        static void Draw()
-        {
-            Console.SetCursorPosition(95, 4);
-            Console.WriteLine("F1 - создать папку");
-            Console.SetCursorPosition(95, 5);
-            Console.WriteLine("F2 - создать файл");
-            Console.SetCursorPosition(95, 6);
-            Console.WriteLine("F3 - удалить");
-            for (int i = 2; i < 8; i++)
-            {
-                Console.SetCursorPosition(90, i);
-                Console.WriteLine("|");
-            }
-            for (int i = 91; i < 120; i++)
-            {
-                Console.SetCursorPosition(i, 7);
-                Console.WriteLine("_");
-            }
-        }
+
     }
 }
